@@ -536,6 +536,17 @@ namespace VSCapture
             ValidateAddData(et, 0.00001,true);
             string s6 = ValidateDataFormatString(et, 0.00001, true);
             
+			// MASSIVE SPECIALK HACK
+			short wtf1 = driSR.basic.co2.fi;
+			double fraction_inspired_co2 = wtf1 * driSR.basic.co2.amb_press;
+			ValidateAddData (fraction_inspired_co2, 0.00001, true);
+
+			short wtf2 = driSR.basic.o2.et;
+			double end_tidal_o2 = wtf2 * driSR.basic.co2.amb_press;
+			ValidateAddData (end_tidal_o2, 0.00001, true);
+
+			// EOHACK
+
             short so7 = driSR.basic.aa.et;
             short so8 = driSR.basic.aa.fi;
             short so9 = driSR.basic.aa.mac_sum;
@@ -674,7 +685,7 @@ namespace VSCapture
             short so9 = driSR.ext2.eeg_bis.emg_val;
             short so10 = driSR.ext2.eeg_bis.sqi_val;
 
-            ValidateAddData(so4,1,true);
+            ValidateAddData(so4, 1,true);
             ValidateAddData(so5, 1, true);
             ValidateAddData(so6, 1, true);
             ValidateAddData(so7, 1, true);

@@ -88,6 +88,7 @@ namespace VSCapture
                     Console.WriteLine("Requesting {0} second Transmission from monitor", nInterval);
                     Console.WriteLine();
                     Console.WriteLine("Data will be written to CSV file AS3ExportData.csv in same folder");
+					Console.WriteLine(Path.Combine(Directory.GetCurrentDirectory(),"AS3ExportData.csv"));
 
 					//Request transfer based on the DRI level of the monitor
 					_serialPort.RequestTransfer(DataConstants.DRI_PH_DISPL, nInterval, DataConstants.DRI_LEVEL_2005); // Add Request Transmission
