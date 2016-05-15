@@ -497,7 +497,7 @@ namespace VSCapture
 				m_strBuilder.AppendLine("VitalSignsCapture v1.005");
 				m_strBuilder.AppendLine("Datex AS3 Monitor");
 
-				m_strBuilder.Append("Date,Time,Heart Rate(/min),Systolic BP(mmHg),Diastolic BP(mmHg),Mean BP(mmHg),SpO2(%),ETCO2(mmHg),");
+				m_strBuilder.Append("Date,Time,Heart Rate(/min),Systolic BP(mmHg),Diastolic BP(mmHg),Mean BP(mmHg),SpO2(%),ETCO2(mmHg),CO2 FI,ETO2(mmHg)");
 				//m_strBuilder.Append("AA ET, AA FI, AA MAC SUM, AA, O2 FI, N2O FI, N2O ET, RR, T1, T2, P1 HR, P1 Sys, P1 Dia, P1 Mean, P2 HR, P2 Sys, P2 Dia, P2Mean, PPeak, PPlat, TV Exp, ST II(mm),ST V5(mm),ST aVL(mm),");
 				m_strBuilder.Append ("AA ET, AA FI, AA MAC SUM, AA, O2 FI, N2O FI, N2O ET, RR, T1, T2, P1 HR, P1 Sys, P1 Dia, P1 Mean, P2 HR, P2 Sys, P2 Dia, P2Mean,");
 				m_strBuilder.Append("PPeak, PPlat, TV Exp, TV Insp, Peep, MV Exp, Compliance, RR,");
