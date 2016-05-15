@@ -542,7 +542,7 @@ namespace VSCapture
 			ValidateAddData (fraction_inspired_co2, 0.00001, true);
 
 			short wtf2 = driSR.basic.o2.et;
-			double end_tidal_o2 = wtf2 * driSR.basic.co2.amb_press;
+			double end_tidal_o2 = wtf2 //02 isnt multiplied by ambient pressure
 			ValidateAddData (end_tidal_o2, 0.00001, true);
 
 			// EOHACK
